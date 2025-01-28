@@ -96,12 +96,20 @@ main h2 {
 
 }
 
+#secondaryNav li div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 #secondaryNav li:not(:last-child) div img {
     height: 60px;
 }
 
 #secondaryNav li:last-child div img {
-    height: 35px
+    height: 35px;
+    vertical-align: middle;
 }
 
 #secondaryNav a {
@@ -109,6 +117,10 @@ main h2 {
     text-transform: uppercase;
     align-content: center;
     color: white;
+}
+
+#secondaryNav img {
+margin: 0 5px;
 }
 
 
