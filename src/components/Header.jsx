@@ -1,3 +1,5 @@
+import headerLinks from "../data/headerLinks";
+
 export default function Header() {
   return (
     <header>
@@ -5,7 +7,15 @@ export default function Header() {
         <img src="/img/dc-logo.png" alt="Logo DC Comics" />
         <nav>
           <ul className="flex">
-            <li>
+            {headerLinks.map((link) => {
+              return (
+                <li key={link.id} className={link.current ? "selected" : ""}>
+                  <a href={link.url}>{link.text}</a>
+                  <div></div>
+                </li>
+              );
+            })}
+            {/* <li>
               <a href="#">characters</a>
               <div></div>
             </li>
@@ -44,7 +54,7 @@ export default function Header() {
             <li>
               <a href="#">shop</a>
               <div></div>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
