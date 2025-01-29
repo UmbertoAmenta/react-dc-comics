@@ -97,12 +97,32 @@ export default function Footer() {
             </ul>
           </div>
         </nav>
-        <div>
-          {/* <img src="/public/img/dc-logo-bg.png" alt="Logo DC Comics" /> */}
-        </div>
+        <div id="logo-bg"></div>
       </div>
       <div>
-        <div className="container"></div>
+        <div id="social" className="container flex">
+          <a className="btn" href="#">
+            SIGN-UP NOW!
+          </a>
+          <div className="flex">
+            <h4>FOLLOW US</h4>
+            <a href="#">
+              <img src="/img/footer-facebook.png" alt="Seguici su Facebook" />
+            </a>
+            <a href="#">
+              <img src="/img/footer-twitter.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="/img/footer-youtube.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="/img/footer-pinterest.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="/img/footer-periscope.png" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );

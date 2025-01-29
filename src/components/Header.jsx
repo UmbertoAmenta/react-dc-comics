@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header>
       <div className="flex container">
-        <img src="public/img/dc-logo.png" alt="Logo DC Comics" />
+        <img src="/img/dc-logo.png" alt="Logo DC Comics" />
         <nav>
           <ul className="flex">
             <li>
