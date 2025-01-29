@@ -1,9 +1,27 @@
+import secondaryNavLinks from "../data/secondaryNavLinks";
+
 export default function Footer() {
   return (
     <footer>
       <div className="flex container">
         <nav className="flex">
-          <div>
+          {secondaryNavLinks.map((menu) => {
+            return (
+              <div>
+                <h4>{menu.title}</h4>
+                <ul>
+                  {menu.links.map((link) => {
+                    return (
+                      <li key={link.id}>
+                        <a href={link.url}>{link.text}</a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            );
+          })}
+          {/* <div>
             <h4>dc comics</h4>
             <ul>
               <li>
@@ -95,7 +113,7 @@ export default function Footer() {
                 <a href="#">DC Power Visa</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </nav>
         <div id="logo-bg"></div>
       </div>
