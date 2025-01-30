@@ -71,18 +71,77 @@ header a {
 /*------------------
     MAIN
 ------------------*/
-main {
-    background-color: black;
+main .hero {
+    background-image: url("img/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+main .hero .container {
+    position: relative;
+    height: 100%;
+}
+
+main .hero button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+main button {
+    background-color: #0282f9;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    font-weight: 800;
+    padding: 10px 60px;
+    margin: 50px 0 15px;
+}
+
+/*------------------
+    Main board
+------------------*/
+main .board {
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .board .flex {
+    flex-wrap: wrap;
+}
+
+/*------------------
+    Main card
+------------------*/
+main .card {
+    width: calc(100% / 6);
+    padding: 0 12px;
+    margin-top: 50px;
+}
+
+main .card > div,
+main .card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+main .card img {
+    object-fit: cover;
+    object-position: top;
+}
+
+main .card h4 {
     color: white;
 }
 
-main h2 {
-    padding: 60px 0;
-}
-
-
 /*------------------
-    main NAVBAR
+    Main navbar
 ------------------*/
 #mainNav {
     background-color: #0282f9;
