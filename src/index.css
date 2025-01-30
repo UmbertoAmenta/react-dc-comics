@@ -82,44 +82,44 @@ main h2 {
 
 
 /*------------------
-    SECONDARY NAVBAR
+    main NAVBAR
 ------------------*/
-#secondaryNav {
+#mainNav {
     background-color: #0282f9;
     padding: 50px 0;
 }
 
-#secondaryNav ul {
+#mainNav ul {
     justify-content: center;
     align-content: space-around;
     gap: 40px;
 
 }
 
-#secondaryNav li div {
+#mainNav li div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
 }
 
-#secondaryNav li:not(:last-child) div img {
+#mainNav li:not(:last-child) div img {
     height: 60px;
 }
 
-#secondaryNav li:last-child div img {
+#mainNav li:last-child div img {
     height: 35px;
     vertical-align: middle;
 }
 
-#secondaryNav a {
+#mainNav a {
     text-decoration: none;
     text-transform: uppercase;
     align-content: center;
     color: white;
 }
 
-#secondaryNav img {
+#mainNav img {
 margin: 0 5px;
 }
 
@@ -131,12 +131,9 @@ footer {
     background-image: url("/img/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* max-height: 370px; */
-    /* overflow: hidden; */
 }
 
 footer nav {
-    padding: 45px 0;
     gap: 30px;
 }
 

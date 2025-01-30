@@ -1,12 +1,12 @@
-import secondaryNavLinksA from "../data/secondaryNavLinks";
-import secondaryNavLinksB from "../data/secondaryNavLinksB";
+import footerNavLinksA from "../data/footerNavLinksA";
+import footerNavLinksB from "../data/footerNavLinksB";
 export default function Footer() {
   return (
     <footer>
       <div className="flex container">
         <nav className="flex">
           <div>
-            {secondaryNavLinksA.map((menu) => {
+            {footerNavLinksA.map((menu) => {
               return (
                 <div>
                   <h4>{menu.title}</h4>
@@ -24,7 +24,7 @@ export default function Footer() {
             })}
           </div>
 
-          {secondaryNavLinksB.map((menu) => {
+          {footerNavLinksB.map((menu) => {
             return (
               <div>
                 <h4>{menu.title}</h4>

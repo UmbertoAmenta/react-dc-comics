@@ -1,4 +1,4 @@
-const secondaryNavLinksA = [
+const footerNavLinksA = [
     {
         id: "1",
         title: "dc comics",
@@ -58,4 +58,4 @@ const secondaryNavLinksA = [
     }
 ]
 
-export default (secondaryNavLinksA)
+export default (footerNavLinksA)

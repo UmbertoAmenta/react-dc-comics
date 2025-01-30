@@ -1,6 +1,6 @@
-export default function SecondaryNav() {
+export default function MainNav() {
   return (
-    <nav id="secondaryNav" className="flex">
+    <nav id="mainNav" className="flex">
       <ul className="flex container">
         <li className="flex">
           <div>
